@@ -2,8 +2,12 @@ import React from 'react';
 import './bootstrap.min.css';
 
 class EmotionTable extends React.Component {
+    constructor(){
+        super();
+    }
     render() {
       //Returns the emotions as an HTML table
+      console.log(this.props.data);
       return (  
         <div>
           <table className="table table-bordered">
